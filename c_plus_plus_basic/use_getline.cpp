@@ -5,16 +5,22 @@ int main (){
 	ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    string st ; 
-    getline(cin , st) ; 
-    size_t pos = st.find('\\') ; 
+    // string st ; 
+    // getline(cin , st) ; 
+    // size_t pos = st.find('\\') ; 
+//     
+    // if(pos == string::npos){
+    	// cout << st << endl ; 
+    // }
+    // else {
+    	// cout << st.substr(0 , pos)  << endl; 
+    // }
     
-    if(pos == string::npos){
-    	cout << st << endl ; 
-    }
-    else {
-    	cout << st.substr(0 , pos)  << endl; 
-    }
+    vector<int>arr = {4,8,9,6,3,2} ; 
+    sort(arr.rbegin() , arr.rend()) ; 
+    for(auto it : arr)cout << it << endl ; 
+    
+    
 	
 	return 0 ;
 }
